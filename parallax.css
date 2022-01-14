@@ -1,0 +1,75 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.bkimg1, .bkimg2, .bkimg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+.bkimg1{
+    background-image:url(backimage.jpg);
+    min-height: 100%;
+}
+
+.bkimg2{
+    background-image: url(backimage2.jpg);
+    min-height: 400px;
+}
+
+.bkimg3{
+    background-image: url(backimage3.jpg);
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section_light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section_dark{
+    background-color:#282e34;
+    color:#ddd;
+}
+
+.bktext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.bktext .border{
+    background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.bktext, .border ,.trans{
+    background-color: transparent;
+}
+
+@media(max-width:568px){
+    .bkimg1, .bkimg2, .bkimg3{
+        background-attachment: scroll;
+    }
+}
